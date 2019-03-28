@@ -1,4 +1,4 @@
-Q. Design Phrase - Let's suppose you have a keyboard and you need to calculate the total shortest paths from source to destination for a given sequence
+Q. Let's suppose you have a keyboard and you need to calculate the total shortest paths from source to destination for it.
 
 In order to implement it, you need to ask the user for the values of a square matrix (Note - Rows and columns can be any. Ask that too). Next, you need to ask for a sequence which will be nothing but a 2D matrix. Next is your task to design a code to find the sum for all the shortest path with the sequence precedence in a keyboard.
 
