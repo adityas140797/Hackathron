@@ -1,0 +1,23 @@
+Q. Design Phrase - Let's suppose you have a keyboard and you need to calculate the total shortest paths from source to destination for a given sequence
+
+In order to implement it, you need to ask the user for the values of a square matrix (Note - Rows and columns can be any. Ask that too). Next, you need to ask for a sequence which will be nothing but a 2D matrix. Next is your task to design a code to find the sum for all the shortest path with the sequence precedence in a keyboard.
+
+Example :
+
+Keyboard : | 2 4 5 |
+           | 1 3 9 |
+           | 7 8 6 |
+
+Sequence : [7, 4, 1, 6, 2]
+
+Solution : Sum = 0+2+1+2+2 = 7
+
+How? : 7 = 0 (Will be starting always with 0)
+       4 -> (7->4) -> (7->1->4) or (7->3->4) = 2
+       1 -> (4->1) = 1
+       6 -> (1->6) -> (1->3->6) or (1->8->6) = 2
+       2 -> (6->2) -> (6->3->2) = 2
+
+       Adding all, will give 0+2+1+2+2 = 7
+
+Note - Shortest paths can be calculated through any direction (up, down, left, right, diagnol)
