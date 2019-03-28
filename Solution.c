@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, j, k=0, l, n, a[0][0], seq[0], b, sum=0, p1, p2, q1, q2, r1, r2;
+    int i, j, k=0, l, n, a[100][100], seq[100], b, sum=0, p1, p2, q1, q2, r1, r2;
 
     printf("Enter the no. of rows or columns for square matrix\n");
     scanf("%d", &n);
@@ -14,16 +14,16 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-	
+
     printf("Enter the limit for the sequence\n");
-    scanf("%d", &n);
+    scanf("%d", &b);
 
     printf("Enter the values for the sequence\n");
-    for (i=0; i<n; i++) {
+    for (i=0; i<b; i++) {
         scanf("%d", &seq[i]);
     }
 
-    for (l=0; l<sizeof(seq); l++) {
+    for (l=0; l<b; l++) {
         for (i=0; i<n; i++) {
             for (j=0; j<n; j++) {
                 if (seq[k] == a[i][j]) {
@@ -59,15 +59,14 @@ int main()
         }
 	printf("\n");
     }
- 
+
     // Print the sequence
-    printf("Sequence given was\n");
-    for (i=0; i<n; i++) {
-        printf("%d", seq[i]);
-	printf(", ");
+    printf("Sequence given was : ");
+    for (i=0; i<b; i++) {
+        printf("%d ", seq[i]);
     }
  
     // Print sum
-    printf("Thus sum for the shortest path for the given matrix with sequence is\n");
-    printf("%d", sum);	
+    printf("\nThus sum for the shortest path for the given matrix with sequence is : ");
+    printf("%d\n", sum);	
 }
